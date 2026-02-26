@@ -46,35 +46,14 @@
   background-color: var(--color-bg-hover);
 }
 
-.imagePlaceholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(
-    135deg,
-    var(--color-bg-elevated) 0%,
-    var(--color-bg-hover) 100%
-  );
-}
-
-.placeholderIcon {
-  font-family: var(--font-mono);
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--color-amber);
-  opacity: 0.3;
-}
-
-.imageWrapper img {
+.thumbnailImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.8s var(--ease-out-expo);
 }
 
-.card:hover .imageWrapper img {
+.card:hover .thumbnailImage {
   transform: scale(1.05);
 }
 

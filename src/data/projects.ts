@@ -47,49 +47,11 @@ export const projects: Project[] = [
     category: 'software',
     details: {
       overview:
-        'FTN provides fantasy sports players with data tools and analytics. The challenge was transforming large, complex datasets into user-friendly interfaces that help players make faster, smarter decisions.',
+        'FTN provides fantasy sports players with data tools and analytics. The challenge was transforming large, complex datasets into user-friendly interfaces that help users and professionals interact with quality data insights.',
       approach:
         'Built interactive data grids, scoring calculators, and comparison tools with a React frontend and Django API backend. Emphasis on performance with large datasets and intuitive filtering and sorting.',
       outcome:
-        'Delivered a suite of analytics tools that make complex sports data accessible and actionable for fantasy players.',
-    },
-  },
-  {
-    slug: 'small-business',
-    title: 'Small Business Web',
-    subtitle: 'Custom websites for local businesses',
-    description:
-      'Thoughtfully designed web presences for small businesses that need more than a template.',
-    thumbnail: '/images/portfolio/smb-thumb.jpg',
-    images: ['/images/portfolio/smb-1.jpg'],
-    tags: ['React', 'Responsive Design', 'SEO', 'Custom CMS'],
-    category: 'web',
-    details: {
-      overview:
-        'Small businesses deserve websites that reflect their unique identity — not cookie-cutter templates. These projects focused on crafting custom web presences tailored to each business.',
-      approach:
-        'Collaborated closely with business owners to understand their brand, audience, and goals. Built custom, responsive sites optimized for performance and search visibility.',
-      outcome:
-        'Delivered distinctive, fast-loading websites that help small businesses stand out and connect with their customers online.',
-    },
-  },
-  {
-    slug: 'shopify',
-    title: 'Shopify Solutions',
-    subtitle: 'Custom e-commerce experiences',
-    description:
-      'Bespoke Shopify customizations and integrations beyond what off-the-shelf themes offer.',
-    thumbnail: '/images/portfolio/shopify-thumb.jpg',
-    images: ['/images/portfolio/shopify-1.jpg'],
-    tags: ['Shopify', 'Liquid', 'JavaScript', 'Custom Themes', 'E-commerce'],
-    category: 'web',
-    details: {
-      overview:
-        'When standard Shopify themes fall short, businesses need custom solutions. These projects extended Shopify with custom functionality, integrations, and design work.',
-      approach:
-        'Built custom theme modifications, bespoke features, and third-party integrations using Shopify\'s Liquid templating and JavaScript. Focused on maintaining store performance while adding functionality.',
-      outcome:
-        'Delivered tailored e-commerce experiences that give businesses the functionality they need without sacrificing the Shopify ecosystem.',
+        'Delivered a suite of analytics tools that make complex sports data accessible and actionable for fantasy sports, sport analysts, and professionals alike.',
     },
   },
 ];

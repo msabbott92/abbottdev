@@ -33,9 +33,12 @@ export function Portfolio() {
           >
             {/* Thumbnail with CRT scanline effect */}
             <div className={styles.imageWrapper}>
-              <div className={styles.imagePlaceholder}>
-                <span className={styles.placeholderIcon}>{project.tags[0]?.[0] || '?'}</span>
-              </div>
+              <img
+                src={project.thumbnail}
+                alt={project.title}
+                className={styles.thumbnailImage}
+                loading="lazy"
+              />
               <div className={styles.scanlines} aria-hidden="true" />
             </div>
 
