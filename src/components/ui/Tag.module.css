@@ -1,0 +1,21 @@
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  border-radius: 100px;
+  background-color: rgba(212, 136, 28, 0.1);
+  color: var(--color-amber);
+  border: 1px solid rgba(212, 136, 28, 0.15);
+  white-space: nowrap;
+  transition:
+    background-color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease;
+}
+
+.tag:hover {
+  background-color: rgba(212, 136, 28, 0.15);
+  border-color: rgba(212, 136, 28, 0.25);
+}

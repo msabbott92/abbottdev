@@ -1,0 +1,15 @@
+.counter {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--color-cream-muted);
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+.value {
+  color: var(--color-amber);
+  font-variant-numeric: tabular-nums;
+}

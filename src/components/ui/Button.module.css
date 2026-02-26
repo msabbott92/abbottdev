@@ -1,0 +1,79 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition:
+    background-color var(--duration-fast) ease,
+    border-color var(--duration-fast) ease,
+    transform var(--duration-fast) ease,
+    box-shadow var(--duration-fast) ease;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+/* === Variants === */
+
+.primary {
+  background-color: var(--color-amber);
+  color: var(--color-bg-deep);
+  border: 2px solid var(--color-amber);
+}
+
+.primary:hover {
+  background-color: var(--color-amber-light);
+  border-color: var(--color-amber-light);
+  box-shadow: 0 0 20px rgba(212, 136, 28, 0.25);
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--color-amber);
+  border: 2px solid var(--color-amber);
+}
+
+.outline:hover {
+  background-color: rgba(212, 136, 28, 0.1);
+  border-color: var(--color-amber-light);
+  color: var(--color-amber-light);
+}
+
+.ghost {
+  background-color: transparent;
+  color: var(--color-cream-muted);
+  border: 2px solid transparent;
+}
+
+.ghost:hover {
+  color: var(--color-cream);
+  background-color: var(--color-bg-elevated);
+}
+
+/* === Sizes === */
+
+.sm {
+  padding: var(--space-1) var(--space-2);
+  font-size: 13px;
+}
+
+.md {
+  padding: var(--space-1) var(--space-4);
+  font-size: 14px;
+  height: 44px;
+}
+
+.lg {
+  padding: var(--space-2) var(--space-6);
+  font-size: 16px;
+  height: 52px;
+}

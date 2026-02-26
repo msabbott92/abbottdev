@@ -1,0 +1,115 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--color-bg-deep);
+}
+
+.notFound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  text-align: center;
+  padding: var(--space-4);
+}
+
+.notFound h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
+
+.notFound p {
+  color: var(--color-cream-muted);
+}
+
+/* === Back bar === */
+.backBar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + var(--space-4)) var(--space-4) 0;
+}
+
+.backLink {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-cream-muted);
+  transition: color var(--duration-fast) ease;
+}
+
+.backLink:hover {
+  color: var(--color-amber);
+}
+
+/* === Hero === */
+.hero {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4) var(--space-6);
+}
+
+.heroContent {
+  max-width: 700px;
+}
+
+.category {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--color-amber);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-2);
+  display: block;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--color-cream-muted);
+  line-height: 1.5;
+  margin-bottom: var(--space-4);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* === Content === */
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.section {
+  max-width: 700px;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  color: var(--color-cream);
+}
+
+.sectionText {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-cream-muted);
+}
+
+.liveLink {
+  padding-top: var(--space-2);
+}

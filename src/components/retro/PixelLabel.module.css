@@ -1,0 +1,10 @@
+.label {
+  display: inline-block;
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+  margin-bottom: var(--space-3);
+  user-select: none;
+}
