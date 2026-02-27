@@ -13,22 +13,22 @@ export function About() {
       <div className={styles.grid}>
         <div className={styles.body}>
           <motion.p className={styles.paragraph} variants={fadeInUp}>
-            Too many projects fail because someone started building before they understood the
-            problem. We take a different approach — every engagement starts with understanding
-            your business, your users, and the real challenge you're trying to solve.
+            Based in Denver, CO and available for work everywhere — we build custom software
+            and AI solutions that solve real business problems. Too many projects fail because
+            someone started coding before they understood the challenge. We take a different
+            approach.
           </motion.p>
 
           <motion.p className={styles.paragraph} variants={fadeInUp}>
-            Clear, honest communication is the foundation of everything we do. No jargon,
-            no disappearing acts, no surprises. You'll always know where things stand,
-            what's next, and why.
+            Every engagement starts with listening. We dig into your business, your users,
+            and the outcomes that actually matter — then build toward those. Clear, honest
+            communication drives everything we do. 
           </motion.p>
 
           <motion.p className={styles.paragraph} variants={fadeInUp}>
-            We don't just execute orders — we help refine ideas. The goal is to build the
-            right solution, not just a solution. Our background in counseling gives us a
-            unique edge when it comes to asking the right questions and truly understanding
-            what clients need.
+            We treat every project like a partnership, not a transaction. That means honest
+            feedback, tough conversations when they matter, and a shared commitment to getting
+            it right.
           </motion.p>
         </div>
 

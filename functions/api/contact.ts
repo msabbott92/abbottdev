@@ -55,7 +55,7 @@ export const onRequestPost: PagesFunction = async (context) => {
     //   },
     //   body: JSON.stringify({
     //     from: 'contact@abbottdev.ai',
-    //     to: 'hello@abbottdev.ai',
+    //     to: 'matthew@abbottendeavors.com',
     //     subject: `New inquiry from ${body.name} — ${body.projectType}`,
     //     text: `Name: ${body.name}\nEmail: ${body.email}\nType: ${body.projectType}\n\n${body.message}`,
     //   }),

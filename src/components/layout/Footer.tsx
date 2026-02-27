@@ -48,7 +48,7 @@ export function Footer() {
           {/* Social links */}
           <div className={styles.social}>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/matthew-abbott-profile/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
@@ -57,7 +57,7 @@ export function Footer() {
               LinkedIn
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/msabbott92"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
@@ -71,7 +71,6 @@ export function Footer() {
         {/* Retro bottom bar */}
         <div className={styles.bottom}>
           <div className={styles.retro}>
-            <RetroCounter label="VISITORS" value="000,042,069" />
             <RetroCounter label="LAST_UPDATED" value="2026.02.25" />
           </div>
           <p className={styles.copyright}>

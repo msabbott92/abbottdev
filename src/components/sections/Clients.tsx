@@ -4,10 +4,10 @@ import { fadeInUp } from '../../lib/animations';
 import styles from './Clients.module.css';
 
 const clients = [
-  { name: 'GeoSure', logo: '/images/clients/geosure.png', url: 'https://geosure.com' },
+  { name: 'GeoSure', logo: '/images/clients/geosure.png', url: 'https://geosure.ai/' },
   { name: 'FTN', logo: '/images/clients/ftn.png', url: 'https://ftnfantasy.com' },
-  { name: 'Happy Egg', logo: '/images/clients/happyegg.png' },
-  { name: 'Poplight', logo: '/images/clients/poplight.png' },
+  { name: 'Happy Egg', logo: '/images/clients/happyegg.png', url: 'https://happyegg.com/' },
+  { name: 'Poplight', logo: '/images/clients/poplight.png', url: 'https://thepoplight.com/' },
 ];
 
 export function Clients() {
