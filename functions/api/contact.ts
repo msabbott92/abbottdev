@@ -11,7 +11,11 @@ function isValidEmail(email: string): boolean {
 
 const VALID_PROJECT_TYPES = ['software', 'ai', 'consulting', 'other'];
 
-export const onRequestPost: PagesFunction = async (context) => {
+interface Env {
+  RESEND_API_KEY: string;
+}
+
+export const onRequestPost: PagesFunction<Env> = async (context) => {
   const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
@@ -43,30 +47,29 @@ export const onRequestPost: PagesFunction = async (context) => {
       });
     }
 
-    // TODO: Wire up email delivery (Resend, SendGrid, Cloudflare Email Workers, etc.)
-    // Example with Resend:
-    //
-    // const resendApiKey = context.env.RESEND_API_KEY;
-    // await fetch('https://api.resend.com/emails', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Authorization': `Bearer ${resendApiKey}`,
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({
-    //     from: 'contact@abbottdev.ai',
-    //     to: 'matthew@abbottendeavors.com',
-    //     subject: `New inquiry from ${body.name} — ${body.projectType}`,
-    //     text: `Name: ${body.name}\nEmail: ${body.email}\nType: ${body.projectType}\n\n${body.message}`,
-    //   }),
-    // });
-
-    console.log('Contact form submission:', {
-      name: body.name,
-      email: body.email,
-      projectType: body.projectType,
-      messageLength: body.message!.length,
+    const resendRes = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${context.env.RESEND_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        from: 'onboarding@resend.dev',
+        to: 'matthew@abbottendeavors.com',
+        reply_to: body.email,
+        subject: `New inquiry from ${body.name} — ${body.projectType}`,
+        text: `Name: ${body.name}\nEmail: ${body.email}\nProject Type: ${body.projectType}\n\nMessage:\n${body.message}`,
+      }),
     });
+
+    if (!resendRes.ok) {
+      const err = await resendRes.text();
+      console.error('Resend error:', err);
+      return new Response(
+        JSON.stringify({ success: false, errors: ['Failed to send message. Please try again.'] }),
+        { status: 500, headers }
+      );
+    }
 
     return new Response(
       JSON.stringify({ success: true, message: 'Message received' }),
