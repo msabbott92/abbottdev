@@ -168,7 +168,7 @@ export function Contact() {
               </Button>
               <p className={styles.altContact}>
                 Prefer email?{' '}
-                <a href="mailto:matthew@abbottendeavors.com">matthew@abbottendeavors.com</a>
+                <a href="mailto:hello@abbottdev.ai">hello@abbottdev.ai</a>
               </p>
             </div>
           </form>
