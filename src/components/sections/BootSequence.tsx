@@ -10,7 +10,6 @@ interface BootSequenceProps {
 const BOOT_LINES = [
   'ABBOTT SYSTEMS v2.6',
   '============================',
-  'CHECKING MEMORY.......... OK',
   'LOADING MODULES........... OK',
   'INITIALIZING DESIGN....... OK',
   'CONNECTING TO CLIENT...... OK',

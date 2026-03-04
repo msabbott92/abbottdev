@@ -37,16 +37,16 @@ export function Hero() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           onAnimationComplete={() => setHeadlineReady(true)}
         >
-          We listen first.
+          Understanding first.
           <br />
-          <span className={styles.headlineAccent}>Then we build.</span>
+          <span className={styles.headlineAccent}>Code second.</span>
         </motion.h1>
 
         {/* Terminal-style subtitle */}
         <div className={styles.subtitle}>
           {headlineReady && (
             <TerminalText
-              text="> building custom software & AI solutions for businesses that need more than a template"
+              text="> Custom software & AI solutions for businesses that need more than a template"
               speed={30}
               cursor={true}
               tag="p"
