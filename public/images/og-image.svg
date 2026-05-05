@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+
+  <!-- Subtle amber accent border -->
+  <rect x="0" y="0" width="1200" height="6" fill="#d4881c"/>
+
+  <!-- Favicon-style mark, scaled up -->
+  <g transform="translate(80, 175)">
+    <rect width="280" height="280" rx="36" fill="#1a1714" stroke="#d4881c" stroke-width="2"/>
+    <text x="35" y="218" font-family="'Space Mono', 'Courier New', monospace" font-size="200" font-weight="bold" fill="#d4881c">A</text>
+    <text x="170" y="218" font-family="'Space Mono', 'Courier New', monospace" font-size="200" font-weight="bold" fill="#f5e6c8">.</text>
+  </g>
+
+  <!-- Right-side text content -->
+  <g transform="translate(420, 0)">
+    <!-- Eyebrow -->
+    <text x="0" y="220" font-family="'Space Mono', 'Courier New', monospace" font-size="22" fill="#d4881c" letter-spacing="3">MATTHEW ABBOTT</text>
+
+    <!-- Headline -->
+    <text x="0" y="295" font-family="'Space Grotesk', 'Helvetica Neue', sans-serif" font-size="68" font-weight="bold" fill="#f5e6c8">Your human</text>
+    <text x="0" y="370" font-family="'Space Grotesk', 'Helvetica Neue', sans-serif" font-size="68" font-weight="bold" fill="#f5e6c8">for AI.</text>
+
+    <!-- Subline -->
+    <text x="0" y="430" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="26" fill="#bfaa8a">AI Concierge &amp; Custom Software</text>
+    <text x="0" y="465" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="26" fill="#bfaa8a">Denver, Colorado</text>
+
+    <!-- Footer URL -->
+    <text x="0" y="555" font-family="'Space Mono', 'Courier New', monospace" font-size="20" fill="#d4881c">abbottdev.ai</text>
+  </g>
+</svg>
