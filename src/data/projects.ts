@@ -60,7 +60,7 @@ export const projects: Project[] = [
     subtitle: 'Custom frontend development for a national egg brand',
     description:
       'Contracted to build a significant portion of Happy Egg\'s WordPress site — crafting bespoke PHP templates and tailored JavaScript interactions that power a polished, story-driven digital presence for one of the largest free-range egg brands in the U.S.',
-    thumbnail: '/images/portfolio/happy-egg-thumb.png',
+    thumbnail: '/images/portfolio/happy-egg-thumb.jpg',
     images: ['/images/portfolio/happy-egg-1.jpg', '/images/portfolio/happy-egg-2.jpg'],
     tags: ['PHP', 'WordPress', 'JavaScript', 'Custom Theme', 'Responsive Design', 'UI/UX'],
     category: 'web',
