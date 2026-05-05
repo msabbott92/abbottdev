@@ -13,7 +13,7 @@ export function About() {
       <div className={styles.grid}>
         <motion.div className={styles.portrait} variants={fadeInUp}>
           <img
-            src="/images/matthew-abbott.jpg"
+            src="/images/matthew-abbott.jpeg"
             alt="Matthew Abbott, Denver-based AI concierge and software developer"
             className={styles.portraitImage}
             loading="lazy"
