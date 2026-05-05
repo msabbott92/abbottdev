@@ -6,7 +6,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-4);
 }
 
@@ -63,15 +63,9 @@
 }
 
 /* === Responsive === */
-@media (max-width: 1024px) {
+@media (max-width: 640px) {
   .grid {
     grid-template-columns: 1fr;
     gap: var(--space-3);
-  }
-}
-
-@media (min-width: 640px) and (max-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 }

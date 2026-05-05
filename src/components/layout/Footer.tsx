@@ -26,7 +26,7 @@ export function Footer() {
               <span className={styles.logoText}>abbottdev</span>
               <span className={styles.logoDot}>.ai</span>
             </button>
-            <p className={styles.tagline}>Custom software & AI solutions</p>
+            <p className={styles.tagline}>Your human for AI. Denver, CO.</p>
           </div>
 
           {/* Nav links */}

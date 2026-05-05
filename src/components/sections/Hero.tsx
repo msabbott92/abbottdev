@@ -46,7 +46,7 @@ export function Hero() {
         <div className={styles.subtitle}>
           {headlineReady && (
             <TerminalText
-              text="> Custom software & AI solutions for businesses that need more than a template"
+              text="> Your human for AI. Denver-based AI concierge and custom software developer — I set up and run the AI tools your team doesn't have time to learn."
               speed={30}
               cursor={true}
               tag="p"
@@ -64,10 +64,10 @@ export function Hero() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
         >
           <Button variant="outline" size="lg" onClick={() => scrollTo('work')}>
-            See Our Work
+            See My Work
           </Button>
           <Button variant="primary" size="lg" onClick={() => scrollTo('contact')}>
-            Let's Talk
+            Book a Call
           </Button>
         </motion.div>
       </div>

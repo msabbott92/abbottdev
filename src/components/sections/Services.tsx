@@ -10,7 +10,7 @@ export function Services() {
   return (
     <SectionWrapper id="services" label="SERVICES" background="deep">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
-        What We Build
+        What I Offer
       </motion.h2>
 
       <div className={styles.grid}>

@@ -8,27 +8,27 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: 'software',
-    title: 'Custom Software Development',
+    id: 'ai-concierge',
+    title: 'AI Concierge',
     description:
-      'Full-stack web applications, from responsive frontends to APIs your team can count on. We build tools around your workflow, not around a framework\'s defaults.',
-    tags: ['React', 'TypeScript', 'Python', 'Django', 'Shopify', 'MySQL', 'PostgreSQL', '.NET', ],
-    icon: '{}',
-  },
-  {
-    id: 'ai',
-    title: 'AI Solutions',
-    description:
-      'Custom chatbots, email automation, AI tool integration, and the consulting to know what\'s worth building. We\'ll tell you where AI makes sense — and where it\'s just hype.',
-    tags: ['Custom Chatbots', 'Email Automation', 'AI Integration', 'LLMs', 'Consulting'],
+      'Your human for AI. I interview your team to learn how work actually gets done, pick and configure the right AI tools for that workflow, train the people using them, and stay on as your point of contact. You don\'t have to learn anything new — I run it for you and tweak it as your needs change.',
+    tags: [
+      'Workflow Interviews',
+      'AI Tool Setup',
+      'Prompt Engineering',
+      'Ongoing Management',
+      'Team Training',
+      'Integrations',
+      'Fractional AI Manager',
+    ],
     icon: '>_',
   },
   {
-    id: 'consulting',
-    title: 'Consulting & Strategy',
+    id: 'software',
+    title: 'Custom Software Development',
     description:
-      'Not ready to build yet? We do architecture reviews, technology selection, project scoping, and roadmapping — so when you are ready, you\'re not starting from scratch.',
-    tags: ['Architecture Review', 'Tech Selection', 'Roadmapping', 'Project Scoping'],
-    icon: '//',
+      'When off-the-shelf tools won\'t cut it, I build custom web applications end-to-end — from responsive frontends to APIs you can count on. Tools shaped around your workflow, not around a framework\'s defaults.',
+    tags: ['React', 'TypeScript', 'Python', 'Django', 'Shopify', 'MySQL', 'PostgreSQL', '.NET'],
+    icon: '{}',
   },
 ];

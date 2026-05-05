@@ -3,6 +3,7 @@ export const SECTIONS = {
   hero: 'hero',
   about: 'about',
   services: 'services',
+  story: 'story',
   work: 'work',
   process: 'process',
   clients: 'clients',
@@ -15,6 +16,7 @@ export type SectionId = (typeof SECTIONS)[keyof typeof SECTIONS];
 export const NAV_ITEMS: { label: string; sectionId: SectionId }[] = [
   { label: 'About', sectionId: SECTIONS.about },
   { label: 'Services', sectionId: SECTIONS.services },
+  { label: 'Story', sectionId: SECTIONS.story },
   { label: 'Work', sectionId: SECTIONS.work },
   { label: 'Process', sectionId: SECTIONS.process },
   { label: 'Contact', sectionId: SECTIONS.contact },

@@ -12,7 +12,7 @@ const BOOT_LINES = [
   '============================',
   'LOADING MODULES........... OK',
   'INITIALIZING DESIGN....... OK',
-  'CONNECTING TO CLIENT...... OK',
+  'WAKING UP THE HUMAN....... OK',
   '',
   '> WELCOME TO ABBOTTDEV.AI_',
 ];

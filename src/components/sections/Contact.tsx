@@ -5,6 +5,9 @@ import { Button } from '../ui/Button';
 import { fadeInUp } from '../../lib/animations';
 import styles from './Contact.module.css';
 
+// TODO: replace with real booking link (Cal.com / Calendly) once confirmed
+const BOOKING_URL = 'https://calendly.com/matthew-abbottendeavors/30min';
+
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
 
 interface FormData {
@@ -28,7 +31,6 @@ export function Contact() {
     setStatus('submitting');
 
     try {
-      // TODO: Connect to serverless function
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -55,8 +57,21 @@ export function Contact() {
         Let's Build Something Together
       </motion.h2>
       <motion.p className={styles.subheading} variants={fadeInUp}>
-        Tell us about your project. We'll get back to you within 24 hours.
+        Tell me about what you're working on. I'll get back to you within 24 hours — or
+        book a free 20-minute intro call below.
       </motion.p>
+
+      <motion.div className={styles.bookingCta} variants={fadeInUp}>
+        <div className={styles.bookingCopy}>
+          <p className={styles.bookingTitle}>Want to talk it through first?</p>
+          <p className={styles.bookingDesc}>
+            Grab a free 20-minute intro call — no obligation, no sales pitch.
+          </p>
+        </div>
+        <Button as="a" href={BOOKING_URL} target="_blank" variant="primary" size="lg">
+          Book a 20-min intro call
+        </Button>
+      </motion.div>
 
       <motion.div className={styles.formWindow} variants={fadeInUp}>
         {/* Terminal window chrome */}
@@ -72,7 +87,7 @@ export function Contact() {
             <div className={styles.successIcon}>&#10003;</div>
             <h3 className={styles.successTitle}>Message sent!</h3>
             <p className={styles.successDesc}>
-              Thanks for reaching out. We'll get back to you within 24 hours.
+              Thanks for reaching out. I'll get back to you within 24 hours.
             </p>
             <Button variant="outline" onClick={() => setStatus('idle')}>
               Send another
@@ -128,10 +143,9 @@ export function Contact() {
                 <option value="" disabled>
                   What are you looking for?
                 </option>
+                <option value="ai-concierge">AI Concierge</option>
                 <option value="software">Custom Software</option>
-                <option value="ai">AI Solution</option>
-                <option value="consulting">Consulting</option>
-                <option value="other">Something Else</option>
+                <option value="other">Not sure yet</option>
               </select>
             </div>
 
@@ -147,13 +161,13 @@ export function Contact() {
                 required
                 className={styles.textarea}
                 rows={5}
-                placeholder="Tell us about your project..."
+                placeholder="Tell me about your project..."
               />
             </div>
 
             {status === 'error' && (
               <p className={styles.errorMessage}>
-                Something went wrong. Please try again or email us directly.
+                Something went wrong. Please try again or email me directly.
               </p>
             )}
 
@@ -168,7 +182,7 @@ export function Contact() {
               </Button>
               <p className={styles.altContact}>
                 Prefer email?{' '}
-                <a href="mailto:matthew@abbottendeavors.com">matthew@abbottendeavors.com</a>
+                <a href="mailto:hello@abbottdev.ai">hello@abbottdev.ai</a>
               </p>
             </div>
           </form>

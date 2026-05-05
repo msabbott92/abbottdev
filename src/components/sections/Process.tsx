@@ -8,25 +8,25 @@ const steps = [
     number: '01',
     title: 'Listen',
     description:
-      'Every project starts with a real conversation. We dig into your business, your users, and the actual problem you need solved — no assumptions, no jargon.',
+      'Every engagement starts with a real conversation. I dig into your business, your team, and the actual problem — no assumptions, no jargon.',
   },
   {
     number: '02',
-    title: 'Plan',
+    title: 'Set Up',
     description:
-      'We translate your vision into a clear technical roadmap. You\'ll know exactly what we\'re building, why, and in what order.',
+      'I pick the right tools, build what needs building, and wire it into the way you already work. If it\'s AI, I configure it. If it\'s custom software, I develop it.',
   },
   {
     number: '03',
-    title: 'Build',
+    title: 'Manage',
     description:
-      'We develop in focused sprints with regular check-ins. You see progress early and often — no disappearing for months.',
+      'You get one person to call. I tune prompts, adjust workflows, fix what breaks, and improve what isn\'t working yet.',
   },
   {
     number: '04',
-    title: 'Refine',
+    title: 'Report',
     description:
-      'Launch isn\'t the end. We test, gather feedback, and iterate until it\'s right. Your project evolves with your needs.',
+      'Regular check-ins on what\'s saving time, what isn\'t, and what\'s next. No black boxes, no surprise invoices.',
   },
 ];
 
@@ -34,7 +34,7 @@ export function Process() {
   return (
     <SectionWrapper id="process" label="PROCESS" background="deep">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
-        How We Work
+        How I Work
       </motion.h2>
 
       <div className={styles.steps}>

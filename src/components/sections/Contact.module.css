@@ -7,7 +7,46 @@
 .subheading {
   font-size: 1.05rem;
   color: var(--color-cream-muted);
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+/* === Book-a-call CTA panel === */
+.bookingCta {
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  background-color: rgba(212, 136, 28, 0.06);
+  border: 1px solid rgba(212, 136, 28, 0.3);
+  border-radius: var(--radius-lg);
+}
+
+.bookingCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.bookingTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-cream);
+}
+
+.bookingDesc {
+  font-size: 0.95rem;
+  color: var(--color-cream-muted);
+}
+
+@media (max-width: 640px) {
+  .bookingCta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* === Terminal Window Chrome === */

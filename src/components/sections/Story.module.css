@@ -1,0 +1,36 @@
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--space-6);
+  max-width: 20ch;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 68ch;
+  padding-left: var(--space-4);
+  border-left: 3px solid var(--color-amber);
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--color-cream);
+}
+
+.paragraph:last-child {
+  color: var(--color-cream-muted);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .body {
+    padding-left: var(--space-3);
+  }
+
+  .paragraph {
+    font-size: 1rem;
+  }
+}
