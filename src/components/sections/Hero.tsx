@@ -73,7 +73,7 @@ export function Hero() {
           <Button variant="primary" size="lg" onClick={() => scrollTo('contact')}>
             Get in Touch
           </Button>
-          <Button variant="outline" size="lg" onClick={() => scrollTo('work')}>
+          <Button variant="outline" size="lg" onClick={() => scrollTo('ai')}>
             See My Work
           </Button>
         </motion.div>

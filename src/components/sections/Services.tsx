@@ -8,7 +8,7 @@ import styles from './Services.module.css';
 
 export function Services() {
   return (
-    <SectionWrapper id="services" label="SERVICES" background="deep">
+    <SectionWrapper id="services" label="SERVICES" background="primary">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
         What I Do
       </motion.h2>

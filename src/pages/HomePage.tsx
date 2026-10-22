@@ -1,6 +1,7 @@
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Hero } from '../components/sections/Hero';
+import { AiWork } from '../components/sections/AiWork';
 import { About } from '../components/sections/About';
 import { Services } from '../components/sections/Services';
 import { Portfolio } from '../components/sections/Portfolio';
@@ -23,11 +24,12 @@ export function HomePage() {
   return (
     <>
       <Hero />
+      <Clients />
+      <AiWork />
       <About />
       <Services />
       <Portfolio />
       <Process />
-      <Clients />
       <Contact />
     </>
   );

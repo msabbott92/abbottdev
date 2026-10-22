@@ -10,9 +10,9 @@ export function Portfolio() {
   const navigate = useNavigate();
 
   return (
-    <SectionWrapper id="work" label="SELECTED_WORK" background="primary">
+    <SectionWrapper id="work" label="SELECTED_WORK" background="deep">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
-        Selected Work
+        Selected Projects
       </motion.h2>
 
       <div className={styles.grid}>

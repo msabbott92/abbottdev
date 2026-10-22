@@ -32,7 +32,7 @@ const steps = [
 
 export function Process() {
   return (
-    <SectionWrapper id="process" label="PROCESS" background="deep">
+    <SectionWrapper id="process" label="PROCESS" background="primary">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
         How I Work
       </motion.h2>

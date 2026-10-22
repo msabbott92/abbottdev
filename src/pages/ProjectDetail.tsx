@@ -45,7 +45,7 @@ export function ProjectDetail() {
       {/* Back link */}
       <div className={styles.backBar}>
         <Link to="/#work" className={styles.backLink}>
-          &larr; Back to all work
+          &larr; Back to all projects
         </Link>
       </div>
 
@@ -91,6 +91,13 @@ export function ProjectDetail() {
             </Button>
           </div>
         )}
+
+        <div className={styles.cta}>
+          <p className={styles.ctaText}>Need something like this built?</p>
+          <Button variant="primary" onClick={() => navigate('/#contact')}>
+            Get in Touch
+          </Button>
+        </div>
       </div>
     </motion.div>
   );

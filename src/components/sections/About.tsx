@@ -6,13 +6,15 @@ import styles from './About.module.css';
 const facts = [
   { label: 'Role', value: 'Contract AI Engineer' },
   { label: 'Focus', value: 'AI agents, chatbots, LLM integration, full-stack web' },
+  { label: 'AI tools', value: 'Anthropic API, Claude Code, Claude Skills' },
+  { label: 'Stack', value: 'Python, TypeScript, React, Next.js, Django, .NET, AWS, GCP' },
   { label: 'Location', value: 'Denver, CO · Remote' },
   { label: 'Availability', value: 'Open to contract work' },
 ];
 
 export function About() {
   return (
-    <SectionWrapper id="about" label="ABOUT_ME" background="primary">
+    <SectionWrapper id="about" label="ABOUT_ME" background="deep">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
         Understanding first. Code second.
       </motion.h2>
@@ -30,9 +32,10 @@ export function About() {
         <div className={styles.body}>
           <motion.p className={styles.paragraph} variants={fadeInUp}>
             I'm Matthew Abbott, a contract AI engineer based in Denver. I build AI agents and
-            chatbots that run in production, and the web applications, APIs, and integrations
-            they need to be useful. I've also built full-stack software for companies like
-            GeoSure, FTN, and Happy Egg.
+            chatbots that run in production, and the web applications, APIs, and cloud
+            infrastructure around them. Through my company, Abbott Endeavors, I've shipped AI
+            features for FTN and GeoSure, and I maintain 15+ production apps on FTN's sports
+            analytics platform.
           </motion.p>
 
           <motion.p className={styles.paragraph} variants={fadeInUp}>

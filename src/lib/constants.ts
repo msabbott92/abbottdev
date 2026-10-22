@@ -1,11 +1,12 @@
 // Section IDs used for navigation and scroll detection
 export const SECTIONS = {
   hero: 'hero',
+  clients: 'clients',
+  ai: 'ai',
   about: 'about',
   services: 'services',
   work: 'work',
   process: 'process',
-  clients: 'clients',
   contact: 'contact',
 } as const;
 
@@ -13,9 +14,10 @@ export type SectionId = (typeof SECTIONS)[keyof typeof SECTIONS];
 
 // Navigation items
 export const NAV_ITEMS: { label: string; sectionId: SectionId }[] = [
+  { label: 'AI Work', sectionId: SECTIONS.ai },
   { label: 'About', sectionId: SECTIONS.about },
   { label: 'Services', sectionId: SECTIONS.services },
-  { label: 'Work', sectionId: SECTIONS.work },
+  { label: 'Projects', sectionId: SECTIONS.work },
   { label: 'Process', sectionId: SECTIONS.process },
   { label: 'Contact', sectionId: SECTIONS.contact },
 ];
