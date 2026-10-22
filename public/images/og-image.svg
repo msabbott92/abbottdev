@@ -17,11 +17,11 @@
     <text x="0" y="220" font-family="'Space Mono', 'Courier New', monospace" font-size="22" fill="#d4881c" letter-spacing="3">MATTHEW ABBOTT</text>
 
     <!-- Headline -->
-    <text x="0" y="295" font-family="'Space Grotesk', 'Helvetica Neue', sans-serif" font-size="68" font-weight="bold" fill="#f5e6c8">Your human</text>
-    <text x="0" y="370" font-family="'Space Grotesk', 'Helvetica Neue', sans-serif" font-size="68" font-weight="bold" fill="#f5e6c8">for AI.</text>
+    <text x="0" y="295" font-family="'Space Grotesk', 'Helvetica Neue', sans-serif" font-size="68" font-weight="bold" fill="#f5e6c8">Contract</text>
+    <text x="0" y="370" font-family="'Space Grotesk', 'Helvetica Neue', sans-serif" font-size="68" font-weight="bold" fill="#f5e6c8">AI Engineer</text>
 
     <!-- Subline -->
-    <text x="0" y="430" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="26" fill="#bfaa8a">AI Concierge &amp; Custom Software</text>
+    <text x="0" y="430" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="26" fill="#bfaa8a">Production AI agents, chatbots &amp; LLM integration</text>
     <text x="0" y="465" font-family="'Inter', 'Helvetica Neue', sans-serif" font-size="26" fill="#bfaa8a">Denver, Colorado</text>
 
     <!-- Footer URL -->

@@ -20,18 +20,18 @@
   transition:
     transform var(--duration-fast) ease,
     opacity var(--duration-fast) ease;
-  opacity: 0.5;
-  filter: grayscale(100%);
+  opacity: 0.6;
 }
 
 .logoLink:hover {
   opacity: 1;
-  filter: grayscale(0%);
   transform: translateY(-2px);
 }
 
+/* Render every logo as a light silhouette so dark marks stay visible on the dark background */
 .logoImg {
   height: 48px;
   width: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
 }

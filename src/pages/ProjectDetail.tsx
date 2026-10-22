@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { getProjectBySlug } from '../data/projects';
@@ -10,6 +11,10 @@ export function ProjectDetail() {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const project = slug ? getProjectBySlug(slug) : undefined;
+
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [slug]);
 
   if (!project) {
     return (

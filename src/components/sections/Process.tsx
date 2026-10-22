@@ -6,27 +6,27 @@ import styles from './Process.module.css';
 const steps = [
   {
     number: '01',
-    title: 'Listen',
+    title: 'Scope',
     description:
-      'Every engagement starts with a real conversation. I dig into your business, your team, and the actual problem — no assumptions, no jargon.',
+      'We talk through the problem, your data, and what success looks like. If AI isn\'t the right tool for the job, I\'ll tell you.',
   },
   {
     number: '02',
-    title: 'Set Up',
+    title: 'Build',
     description:
-      'I pick the right tools, build what needs building, and wire it into the way you already work. If it\'s AI, I configure it. If it\'s custom software, I develop it.',
+      'I work in short iterations and show working software early, so you can see progress and change direction before it gets expensive.',
   },
   {
     number: '03',
-    title: 'Manage',
+    title: 'Deploy',
     description:
-      'You get one person to call. I tune prompts, adjust workflows, fix what breaks, and improve what isn\'t working yet.',
+      'I ship to production with logging, monitoring, and guardrails in place, and test against real inputs before your users see it.',
   },
   {
     number: '04',
-    title: 'Report',
+    title: 'Hand Off',
     description:
-      'Regular check-ins on what\'s saving time, what isn\'t, and what\'s next. No black boxes, no surprise invoices.',
+      'Your team gets the code, documentation, and a walkthrough. If you want ongoing support after launch, I can stay on.',
   },
 ];
 

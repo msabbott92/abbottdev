@@ -14,9 +14,9 @@ export function Clients() {
   if (clients.length === 0) return null;
 
   return (
-    <SectionWrapper id="clients" label="TRUSTED_BY" background="primary">
+    <SectionWrapper id="clients" label="CLIENTS" background="primary">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
-        Trusted By
+        Companies I've Worked With
       </motion.h2>
 
       <motion.div className={styles.logoGrid} variants={fadeInUp}>

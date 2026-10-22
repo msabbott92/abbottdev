@@ -8,27 +8,27 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    id: 'ai-concierge',
-    title: 'AI Concierge',
+    id: 'ai-agents',
+    title: 'AI Agents & Chatbots',
     description:
-      'Your human for AI. I interview your team to learn how work actually gets done, pick and configure the right AI tools for that workflow, train the people using them, and stay on as your point of contact. You don\'t have to learn anything new — I run it for you and tweak it as your needs change.',
-    tags: [
-      'Workflow Interviews',
-      'AI Tool Setup',
-      'Prompt Engineering',
-      'Ongoing Management',
-      'Team Training',
-      'Integrations',
-      'Fractional AI Manager',
-    ],
+      'I build AI agents and chatbots for real users: customer-facing assistants, internal tools, and automated workflows like email triage and response. That covers prompt and tool design, connecting the model to your data and systems, and testing it against the cases that matter to your business.',
+    tags: ['AI Agents', 'Chatbots', 'LLM APIs', 'Prompt Engineering', 'Tool Calling', 'Workflow Automation'],
     icon: '>_',
   },
   {
-    id: 'software',
-    title: 'Custom Software Development',
+    id: 'ai-deployment',
+    title: 'AI Deployment & Integration',
     description:
-      'When off-the-shelf tools won\'t cut it, I build custom web applications end-to-end — from responsive frontends to APIs you can count on. Tools shaped around your workflow, not around a framework\'s defaults.',
-    tags: ['React', 'TypeScript', 'Python', 'Django', 'Shopify', 'MySQL', 'PostgreSQL', '.NET'],
+      'I take AI features from prototype to production. I wire models into your existing apps and data, deploy them behind reliable APIs, and keep an eye on cost, latency, and quality after launch. When the contract ends, your team gets code and documentation they can maintain.',
+    tags: ['Deployment', 'API Integration', 'AWS', 'Monitoring', 'Documentation', 'Ongoing Support'],
+    icon: '=>',
+  },
+  {
+    id: 'software',
+    title: 'Full-Stack Development',
+    description:
+      'AI features still need a product around them. I build web applications end to end, from React frontends to Python and .NET backends, and I\'ve shipped production apps for clients in travel safety, sports analytics, and consumer brands.',
+    tags: ['React', 'TypeScript', 'Python', 'Django', 'PostgreSQL', 'MySQL', '.NET', 'Shopify'],
     icon: '{}',
   },
 ];

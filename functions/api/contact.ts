@@ -9,7 +9,8 @@ function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
-const VALID_PROJECT_TYPES = ['software', 'ai', 'consulting', 'other'];
+// Must match the <option> values in src/components/sections/Contact.tsx
+const VALID_PROJECT_TYPES = ['ai-agents', 'ai-deployment', 'software', 'contract-role', 'other'];
 
 interface Env {
   RESEND_API_KEY: string;

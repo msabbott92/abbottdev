@@ -26,7 +26,7 @@ export function Footer() {
               <span className={styles.logoText}>abbottdev</span>
               <span className={styles.logoDot}>.ai</span>
             </button>
-            <p className={styles.tagline}>Your human for AI. Denver, CO.</p>
+            <p className={styles.tagline}>Contract AI Engineer. Denver, CO.</p>
           </div>
 
           {/* Nav links */}
@@ -71,7 +71,7 @@ export function Footer() {
         {/* Retro bottom bar */}
         <div className={styles.bottom}>
           <div className={styles.retro}>
-            <RetroCounter label="LAST_UPDATED" value="2026.02.25" />
+            <RetroCounter label="LAST_UPDATED" value="2026.10.22" />
           </div>
           <p className={styles.copyright}>
             &copy; {currentYear} Abbott Endeavors. All rights reserved.

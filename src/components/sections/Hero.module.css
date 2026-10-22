@@ -50,13 +50,22 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  max-width: 800px;
+  max-width: 860px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: clamp(0.75rem, 1.2vw, 0.875rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-amber);
+  margin-bottom: var(--space-3);
 }
 
 .headline {
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
   line-height: 1.1;
   color: var(--color-cream);
   margin-bottom: var(--space-4);
@@ -66,16 +75,12 @@
   color: var(--color-amber);
 }
 
-.subtitle {
-  min-height: 2.5rem;
-  margin-bottom: var(--space-6);
-}
-
-.subtitleText {
-  font-family: var(--font-mono);
-  font-size: clamp(0.875rem, 1.5vw, 1.1rem);
+.lead {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.6;
   color: var(--color-cream-muted);
-  line-height: 1.5;
+  max-width: 640px;
+  margin: 0 auto var(--space-5);
 }
 
 .actions {
@@ -83,6 +88,17 @@
   gap: var(--space-3);
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.status {
+  min-height: 1.5rem;
+  margin-top: var(--space-4);
+}
+
+.statusText {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--color-cream-muted);
 }
 
 /* === Scroll indicator === */
@@ -112,6 +128,14 @@
 @media (max-width: 640px) {
   .headline {
     font-size: 2.2rem;
+  }
+
+  .eyebrowName {
+    display: block;
+  }
+
+  .eyebrowSep {
+    display: none;
   }
 
   .actions {

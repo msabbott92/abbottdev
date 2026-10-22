@@ -3,18 +3,25 @@ import { SectionWrapper } from '../ui/SectionWrapper';
 import { fadeInUp, slideInRight } from '../../lib/animations';
 import styles from './About.module.css';
 
+const facts = [
+  { label: 'Role', value: 'Contract AI Engineer' },
+  { label: 'Focus', value: 'AI agents, chatbots, LLM integration, full-stack web' },
+  { label: 'Location', value: 'Denver, CO · Remote' },
+  { label: 'Availability', value: 'Open to contract work' },
+];
+
 export function About() {
   return (
     <SectionWrapper id="about" label="ABOUT_ME" background="primary">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
-        Straight talk. One person. Denver, CO.
+        Understanding first. Code second.
       </motion.h2>
 
       <div className={styles.grid}>
         <motion.div className={styles.portrait} variants={fadeInUp}>
           <img
             src="/images/matthew-abbott.jpeg"
-            alt="Matthew Abbott, Denver-based AI concierge and software developer"
+            alt="Matthew Abbott, contract AI engineer in Denver"
             className={styles.portraitImage}
             loading="lazy"
           />
@@ -22,23 +29,45 @@ export function About() {
 
         <div className={styles.body}>
           <motion.p className={styles.paragraph} variants={fadeInUp}>
-            I'm Matthew. I'm based in Denver and I work with teams here and everywhere
-            else. Too many software and AI projects fail because someone started building
-            before they understood the problem. I'd rather ask the right questions upfront
-            than build the wrong thing twice.
+            I'm Matthew Abbott, a contract AI engineer based in Denver. I build AI agents and
+            chatbots that run in production, and the web applications, APIs, and integrations
+            they need to be useful. I've also built full-stack software for companies like
+            GeoSure, FTN, and Happy Egg.
           </motion.p>
 
           <motion.p className={styles.paragraph} variants={fadeInUp}>
-            You get honest feedback, direct communication, and one person who'll tell you
-            when something won't work — before it gets expensive. If you're in the Denver
-            area, I'm always happy to meet you for coffee.
+            Plenty of AI projects fail because the team started building before anyone
+            understood the problem. I'd rather ask the right questions up front than build
+            the wrong thing twice.
+          </motion.p>
+
+          <motion.p className={styles.paragraph} variants={fadeInUp}>
+            I work remotely with teams anywhere. If you're in Denver, I'm happy to meet in
+            person.
           </motion.p>
         </div>
 
-        <motion.aside className={styles.pullQuote} variants={slideInRight}>
-          <blockquote className={styles.quote}>
-            "I'm the human for your AI assistants."
-          </blockquote>
+        <motion.aside className={styles.facts} variants={slideInRight}>
+          <dl className={styles.factList}>
+            {facts.map((fact) => (
+              <div key={fact.label} className={styles.fact}>
+                <dt className={styles.factLabel}>{fact.label}</dt>
+                <dd className={styles.factValue}>{fact.value}</dd>
+              </div>
+            ))}
+          </dl>
+          <div className={styles.factLinks}>
+            <a
+              href="https://www.linkedin.com/in/matthew-abbott-profile/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn &rarr;
+            </a>
+            <a href="https://github.com/msabbott92" target="_blank" rel="noopener noreferrer">
+              GitHub &rarr;
+            </a>
+          </div>
         </motion.aside>
       </div>
     </SectionWrapper>

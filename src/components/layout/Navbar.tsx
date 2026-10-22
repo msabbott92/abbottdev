@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { NAV_ITEMS } from '../../lib/constants';
@@ -6,31 +6,11 @@ import { useScrollSection } from '../../hooks/useScrollSection';
 import styles from './Navbar.module.css';
 
 export function Navbar() {
-  const [isVisible, setIsVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const activeSection = useScrollSection();
   const location = useLocation();
   const navigate = useNavigate();
   const isHomePage = location.pathname === '/';
-
-  // Show navbar after scrolling past the hero
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const heroHeight = window.innerHeight * 0.6;
-      setIsVisible(scrollY > heroHeight);
-    };
-
-    // Show navbar immediately on non-home pages
-    if (!isHomePage) {
-      setIsVisible(true);
-      return;
-    }
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isHomePage]);
 
   const scrollToSection = (sectionId: string) => {
     setIsMobileMenuOpen(false);
@@ -60,10 +40,7 @@ export function Navbar() {
       <motion.nav
         className={styles.navbar}
         initial={{ y: -100, opacity: 0 }}
-        animate={{
-          y: isVisible ? 0 : -100,
-          opacity: isVisible ? 1 : 0,
-        }}
+        animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className={styles.container}>

@@ -54,22 +54,21 @@ export function Contact() {
   return (
     <SectionWrapper id="contact" label="GET_IN_TOUCH" background="deep">
       <motion.h2 className={styles.heading} variants={fadeInUp}>
-        Let's Build Something Together
+        Hiring for an AI project?
       </motion.h2>
       <motion.p className={styles.subheading} variants={fadeInUp}>
-        Tell me about what you're working on. I'll get back to you within 24 hours — or
-        book a free 20-minute intro call below.
+        Tell me about the project or role. I reply within 24 hours.
       </motion.p>
 
       <motion.div className={styles.bookingCta} variants={fadeInUp}>
         <div className={styles.bookingCopy}>
-          <p className={styles.bookingTitle}>Want to talk it through first?</p>
+          <p className={styles.bookingTitle}>Prefer to talk first?</p>
           <p className={styles.bookingDesc}>
-            Grab a free 20-minute intro call — no obligation, no sales pitch.
+            Book a free intro call to go over what you need and whether I'm a good fit.
           </p>
         </div>
         <Button as="a" href={BOOKING_URL} target="_blank" variant="primary" size="lg">
-          Book a 20-min intro call
+          Book an intro call
         </Button>
       </motion.div>
 
@@ -130,7 +129,7 @@ export function Contact() {
 
             <div className={styles.field}>
               <label htmlFor="projectType" className={styles.label}>
-                Project Type
+                What do you need?
               </label>
               <select
                 id="projectType"
@@ -141,11 +140,13 @@ export function Contact() {
                 className={styles.select}
               >
                 <option value="" disabled>
-                  What are you looking for?
+                  Choose one
                 </option>
-                <option value="ai-concierge">AI Concierge</option>
-                <option value="software">Custom Software</option>
-                <option value="other">Not sure yet</option>
+                <option value="ai-agents">AI agent or chatbot</option>
+                <option value="ai-deployment">AI deployment or integration</option>
+                <option value="software">Full-stack development</option>
+                <option value="contract-role">Contract role on my team</option>
+                <option value="other">Something else</option>
               </select>
             </div>
 
@@ -161,7 +162,7 @@ export function Contact() {
                 required
                 className={styles.textarea}
                 rows={5}
-                placeholder="Tell me about your project..."
+                placeholder="What are you building, and where do you need help?"
               />
             </div>
 
